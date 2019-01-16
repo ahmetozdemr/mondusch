@@ -15,8 +15,15 @@ class personlichangaben extends Component<Props> {
       <View>
   <Text style={styles.baseText}>PERSÖNLICHE ANGABEN</Text>
 
+  <View
+    style={{
+      borderBottomColor: '#FF507C',
+      borderBottomWidth: 2,
+    }}
+   />
+
       <DatePicker
-        style={{width: 200}}
+        style={styles.datapickerstyle}
         date={this.state.date}
         mode="date"
         placeholder="select date"
@@ -50,6 +57,10 @@ const styles = StyleSheet.create({
     color:'#FF8CA9',
     fontSize: 20,
     fontWeight: 'bold'
+  },
+  datapickerstyle:{
+    width: 200,
+    marginTop: 20,
   }
 });
 
