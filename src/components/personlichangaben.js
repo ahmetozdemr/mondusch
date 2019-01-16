@@ -13,10 +13,12 @@ class personlichangaben extends Component<Props> {
   render(){
     return (
       <View>
+
   <Text style={styles.baseText}>PERSÖNLICHE ANGABEN</Text>
 
   <View
     style={{
+      marginTop: 5,
       borderBottomColor: '#FF507C',
       borderBottomWidth: 2,
     }}
@@ -29,7 +31,7 @@ class personlichangaben extends Component<Props> {
         placeholder="select date"
         format="YYYY-MM-DD"
         minDate="2016-05-01"
-        maxDate="2016-06-01"
+        maxDate="2020-06-01"
         confirmBtnText="Confirm"
         cancelBtnText="Cancel"
         customStyles={{
@@ -40,7 +42,10 @@ class personlichangaben extends Component<Props> {
             marginLeft: 0
           },
           dateInput: {
-            marginLeft: 36
+            marginLeft: 36,
+            borderColor: '#FF8CA9',
+            borderRadius: 15,
+            borderWidth: 2,
           }
           // ... You can check the source to find the other keys.
         }}
@@ -54,12 +59,13 @@ class personlichangaben extends Component<Props> {
 
 const styles = StyleSheet.create({
   baseText: {
+    marginTop: 10,
     color:'#FF8CA9',
     fontSize: 20,
     fontWeight: 'bold'
   },
   datapickerstyle:{
-    width: 200,
+    width: 350,
     marginTop: 20,
   }
 });
