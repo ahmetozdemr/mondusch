@@ -13,8 +13,7 @@ class personlichangaben extends Component<Props> {
   render(){
     return (
       <View>
-
-<Hr text="Some Text" fontSize={5} lineColor="#eee" textPadding={5} textStyles={yourCustomStyles} hrStyles={yourCustomHRStyles} />
+  <Text style={styles.baseText}>PERSÖNLICHE ANGABEN</Text>
 
       <DatePicker
         style={{width: 200}}
@@ -45,5 +44,13 @@ class personlichangaben extends Component<Props> {
     )
   }
 }
+
+const styles = StyleSheet.create({
+  baseText: {
+    color:'#FF8CA9',
+    fontSize: 20,
+    fontWeight: 'bold'
+  }
+});
 
 export default personlichangaben;

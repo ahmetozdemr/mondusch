@@ -9,9 +9,14 @@ class Deneme extends Component<Props> {
     return (
 
      <View>
-     <Text>
-gffhggfghhdhdghdghdg
-</Text>
+
+     <Text>dgdgds</Text>
+     <View
+   style={{
+     borderBottomColor: 'black',
+     borderBottomWidth: 5,
+   }}
+ />
      </View>
 
     )
