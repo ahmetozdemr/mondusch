@@ -21,7 +21,7 @@ export default class App extends Component<Props> {
         <Deneme/>
 
         <View style={styles.container}>
-          <Personlichangaben/>
+          <Deneme2/>
 
         </View>
       </View>

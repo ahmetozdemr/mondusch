@@ -8,20 +8,23 @@ class Deneme2 extends Component<Props> {
 
     render(){
 
+        const { query } = this.state;
+        const data = this._filterData(query)
+
         return (
 
             <View>
-               <Text>gddggsdd</Text>
-                <Text>gddggsdd</Text>
-                <Image
-                    source={{uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png'}}
-                />
 
-                <Image
-                    style={{width: 66, height: 58}}
-                    source={{uri: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAAEXRFWHRTb2Z0d2FyZQBwbmdjcnVzaEB1SfMAAABQSURBVGje7dSxCQBACARB+2/ab8BEeQNhFi6WSYzYLYudDQYGBgYGBgYGBgYGBgYGBgZmcvDqYGBgmhivGQYGBgYGBgYGBgYGBgYGBgbmQw+P/eMrC5UTVAAAAABJRU5ErkJggg=='}}
-                />
-
+                <Autocomplete
+                    data={data}
+                    defaultValue={query}
+                    onChangeText={text => this.setState({ query: text })}
+                    renderItem={item => (
+                        <TouchableOpacity onPress={() => this.setState({ query: item })}>
+                            <Text>{item}</Text>
+                        </TouchableOpacity>
+                    )}
+                />);
 
             </View>
 
