@@ -7,6 +7,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "color": "^3.1.0",
+    "eslint-config-osedea": "^3.2.0",
+    "lodash": "^4.17.11",
+    "proptypes": "^1.1.0",
     "react": "16.6.3",
     "react-native": "0.57.8",
     "react-native-action-bar": "^2.0.5",

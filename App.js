@@ -10,13 +10,15 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import Personlichangaben from './src/components/personlichangaben'
 import Deneme from './src/components/deneme'
+import Deneme2 from './src/components/deneme2'
+
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <Personlichangaben/>
+      <View>
+        <Deneme/>
       </View>
     );
   }
