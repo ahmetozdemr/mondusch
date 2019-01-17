@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import DatePicker from 'react-native-datepicker'
+import RadioForm, {RadioButton, RadioButtonInput, RadioButtonLabel} from 'react-native-simple-radio-button';
 import Hr from 'react-native-hr-component'
 
 type Props = {};
@@ -11,6 +12,10 @@ class personlichangaben extends Component<Props> {
   }
 
   render(){
+      const radio_props = [
+          {label: 'Weiblich', value: 0 },
+          {label: 'Männlich', value: 1 }
+      ];
     return (
       <View>
 
@@ -51,6 +56,19 @@ class personlichangaben extends Component<Props> {
         }}
         onDateChange={(date) => {this.setState({date: date})}}
       />
+
+
+
+          <Text style={{marginTop:20, color: '#171515'}}>Geschlecht</Text>
+
+          <RadioForm
+              style={{
+                  marginTop: 5,
+              }}
+              radio_props={radio_props}
+              initial={0}
+              onPress={(value) => {this.setState({value:value})}}
+          />
 
       </View>
     )
