@@ -19,6 +19,11 @@ export default class App extends Component<Props> {
     return (
       <View>
         <Deneme/>
+
+        <View style={styles.container}>
+          <Personlichangaben/>
+
+        </View>
       </View>
     );
   }
@@ -26,10 +31,11 @@ export default class App extends Component<Props> {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    margin: 5,
+   // flex: 1,
   //  justifyContent: 'center',
-    alignItems: 'center',
+    //alignItems: 'center',
+    marginLeft: 5,
+    marginRight: 5,
     backgroundColor: '#F5FCFF',
   }
 });

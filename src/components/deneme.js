@@ -13,7 +13,7 @@ class Deneme extends Component<Props> {
      <View>
 
          <ActionBar
-             title={'React-native-action-bar Example'}
+             title={'MONDUS'}
              rightText={'Hello'}
              leftIconName={'menu'}
              leftBadge={''}
@@ -52,7 +52,6 @@ class Deneme extends Component<Props> {
 
 const styles = StyleSheet.create({
     bar: {
-
         margin: 5,
         //  justifyContent: 'center',
         alignItems: 'center',
