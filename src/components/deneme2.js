@@ -15,7 +15,7 @@ class Deneme2 extends Component<Props> {
 
             <View>
 
-
+ 
 
             </View>
 
